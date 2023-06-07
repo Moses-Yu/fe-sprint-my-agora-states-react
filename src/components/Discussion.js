@@ -1,7 +1,7 @@
 import './styles/Discussion.css'
 function Discussion({ discussion }) {
     return (
-        <li className="discussion__container">
+        <li key={discussion.id} className="discussion__container">
             <div className="discussion__avatar--wrapper">
                 <img className="discussion__avatar--image"
                     src={discussion.avatarUrl}
