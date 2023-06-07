@@ -34,29 +34,29 @@ function DiscussionCreate({ getDiscussions }) {
     }
 
     return (
-        <div class="form__container">
-            <form action="" method="get" class="form">
-                <div class="form__input--wrapper">
-                    <span class="form__input--title">
-                        <label for="title">Enter your title: </label>
+        <div className="form__container">
+            <form action="" method="get" className="form">
+                <div className="form__input--wrapper">
+                    <span className="form__input--title">
+                        <label>Enter your title: </label>
                         <input type="text" name="title" id="title" required value={title}
                             onChange={handleChange_title} />
                     </span>
-                    <span class="form__input--name">
-                        <label for="name">Enter your name: </label>
+                    <span className="form__input--name">
+                        <label>Enter your name: </label>
                         <input type="text" name="name" id="name" required
                             value={author}
                             onChange={handleChange_author} />
                     </span>
-                    <div class="form__textbox">
-                        <label for="story">Your question: </label>
+                    <div className="form__textbox">
+                        <label>Your question: </label>
                         <textarea id="story" name="story" placeholder="질문을 작성하세요" required
                             value={content}
                             onChange={handleChange_content}></textarea>
                     </div>
                 </div>
-                <div class="form__submit">
-                    <input class="send" type="button" value="submit"
+                <div className="form__submit">
+                    <input className="send" type="button" value="submit"
                         onClick={upLoad} />
                 </div>
             </form>
